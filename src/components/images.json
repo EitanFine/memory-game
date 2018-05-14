@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Black Panther",
+    "image": "/assets/images/black-panther.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Cyborg",
+    "image": "/assets/images/cyborg.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Strange",
+    "image": "/assets/images/dr-strange.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Green Lantern",
+    "image": "/assets/images/green-lantern.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Hulk",
+    "image": "/assets/images/hulk.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Human Torch",
+    "image": "/assets/images/human-torch.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Iron Man",
+    "image": "/assets/images/iron-man.jpg"
+  },
+    {
+    "id": 8,
+    "name": "Scarlet Witch",
+    "image": "/assets/images/scarlet-witch.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Supergirl",
+    "image": "/assets/images/supergirl.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Superman",
+    "image": "/assets/images/superman.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Flash",
+    "image": "/assets/images/the-flash.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Wonder Woman",
+    "image": "/assets/images/wonder-woman.jpg"
+  }
+]

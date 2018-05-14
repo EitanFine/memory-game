@@ -1,0 +1,73 @@
+/* NavBar Styling */
+
+#brand {
+    font-family: 'Anton', sans-serif;
+    font-size: 27px;
+    padding-left: 25px;
+    text-align: left;
+}
+
+#brand a {
+    color: white;
+    text-decoration: none;
+}
+
+#brand a:hover {
+    color: lightgrey;
+}
+
+#messageBoard {
+    background-color: lightgrey;
+    border-radius: 21px;
+    padding: 5px 0;
+    text-shadow: 0 0 15px #e7222c;}
+
+.navbar {
+    background: #e7222c;
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    color: #fff;
+    display: block;
+    font-size: calc(10px + 11 * (100vw - 320px)/ 800);
+    min-height: 70px;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 99;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 25px 0;
+    text-align: center;
+    width: 33.3%;
+}
+
+#scoring {
+    padding-right: 25px;
+    text-align: right;
+}
+
+@media screen and (max-width: 575px) {
+
+    /* Removing intro <li> and altering scoring <li>
+        on mobile phone screens */    
+
+    #intro {
+        display: none;
+    }
+
+    #scoring {
+        bottom: 12px;
+        position: absolute;
+        right: 0px;    
+        text-align: right;
+    }
+    
+}
