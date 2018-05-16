@@ -56,8 +56,8 @@
 
 @media screen and (max-width: 575px) {
 
-    /* Removing intro <li> and altering scoring <li>
-        on mobile phone screens */    
+    /* Removing brand <li> and altering intro and scoring <li>
+        on mobile phone screens smaller than 576px wide */    
 
     #brand {
         display: none;
