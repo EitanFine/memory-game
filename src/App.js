@@ -84,9 +84,9 @@ class App extends React.Component {
                 msg = successMessages[Math.floor(Math.random() * successMessages.length)];
                 this.updateState(msg, this.state.score + 1, this.state.topScore);
             };
-            // Reset score if user wins
+            // Reset score\top score if user wins
             if (this.state.score === 11) {
-                this.updateState("You Win! Play Again?", 0, this.state.topScore);
+                this.updateState("You Win! Play Again?", 0, 0);
             }            
         }
         // Otherwise, render fail message and update state accordingly
