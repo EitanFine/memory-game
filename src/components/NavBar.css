@@ -59,8 +59,16 @@
     /* Removing intro <li> and altering scoring <li>
         on mobile phone screens */    
 
-    #intro {
+    #brand {
         display: none;
+    }
+
+    #intro {
+        padding-left: 25px;
+    }
+
+    #messageBoard {
+        width: 170%;
     }
 
     #scoring {
