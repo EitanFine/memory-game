@@ -19,6 +19,7 @@ class App extends React.Component {
 
     // Initial state
     state = {
+        duplicate: false,
         imageArray: images,
         message: "Click On An Image To Begin!",
         score: 0,
@@ -65,7 +66,7 @@ class App extends React.Component {
 
         // If clicked valid image...
         if (found === undefined) {
-            // Find image index and push image into clickHistory array
+            // Find image and push image into clickHistory array
             const image = this.state.imageArray.find((element) => {
                 // Next comment tells React\Yarn to ignore '==' in the return line
                 // eslint-disable-next-line
@@ -78,15 +79,15 @@ class App extends React.Component {
                 msg = successMessages[Math.floor(Math.random() * successMessages.length)];
                 this.updateState(msg, this.state.score + 1, this.state.topScore + 1);
             }
-            // Reset score if user wins
-            else if (this.state.score === 12) {
-                this.updateState("You Win! Play Again?", 0, this.state.topScore);
-            }
             // Else, update score only
             else {
                 msg = successMessages[Math.floor(Math.random() * successMessages.length)];
                 this.updateState(msg, this.state.score + 1, this.state.topScore);
             };
+            // Reset score if user wins
+            if (this.state.score === 11) {
+                this.updateState("You Win! Play Again?", 0, this.state.topScore);
+            }            
         }
         // Otherwise, render fail message and update state accordingly
         else {
@@ -117,6 +118,7 @@ class App extends React.Component {
                 />
                 <Jumbotron />
                 <Images
+                    duplicate={this.state.duplicate}
                     images={this.state.imageArray}
                     processClick={this.processClick}
                 />

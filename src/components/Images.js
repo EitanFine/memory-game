@@ -1,7 +1,7 @@
 import React from "react"; // React
 import "./Images.css"; // Images CSS
 
-const Images = ({ images, processClick }) => {
+const Images = ({ duplicate, images, processClick }) => {
 
     // Function to confirm and process clicked image
     const confirmClick = (event) => {
@@ -11,10 +11,11 @@ const Images = ({ images, processClick }) => {
 
     // Adding Images From Props To Array
     const imageDivs = images.map((img) => {
+        console.log("duplicate: ", duplicate);
         return (
             <div className="imageDiv" key={img.id}>
                 <button className="imageButton" onClick={confirmClick}>
-                    <img id={img.id} src={img.image} alt={img.name} />
+                    <img id={img.id} data-duplicate={duplicate} src={img.image} alt={img.name} />
                 </button>
             </div>
         );
